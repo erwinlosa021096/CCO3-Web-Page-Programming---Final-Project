@@ -1,0 +1,89 @@
+<!DOCTYPE html> 
+
+<html>
+<head>
+<title>
+Lesson 14
+</title>
+</head>
+<body>
+<center><table border="0" cellspacing="0" width="100%"><img style="height: 100px; width: 100px; margin-left: 30px; border-radius: 50px;" src="logo1.jpg"/><img style="height: 100px; width: 100px; margin-left: 30px; border-radius: 50px;" src="logo2.jpg"/>
+<tr height="35" bgcolor="maroon" align="center">
+<td colspan="4" > <font size="5" face="cooper black" color="white">WEB PAGE PROGRAMMING<br>(USING HTML AND JAVASCRIPT)</font></td>
+
+</tr>
+
+<tr>
+<td><font size="5" face="comic sans" color="black"><b>Lesson 14: JavaScript – Cookies  <b></font></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td><center><font size="5" face="cooper black" color="maroon"><a href="landingpage.html">BACK<a></font></center></td>
+</tr>
+<tr>
+</table>
+</center><br>
+
+<h2>What is a Cookie?</h2><hr>
+<p>Cookies are small amounts of information that are stored in the user’s computer from a Web page. They can be accessed
+and retrieved by the Web page whenever they are needed. Web pages take advantage of cookies in order to modify the
+page when the user accesses them. Cookies expire after some time set by the Web developer.</p>
+
+<p>Syntax for using cookies:</p>
+<h4>Document.cookie = “name=value; expires=date; path=path; domain=domain; secure”;</h4>
+
+<center>
+<table border="2" bordercolor = "maroon" cellspacing="0" width="50%">
+<tr >
+<td><xmp>
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function setCookie(cname,cvalue,exdays) {
+  var d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  var expires = "expires=" + d.toGMTString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
+function checkCookie() {
+  var user=getCookie("username");
+  if (user != "") {
+    alert("Welcome again " + user);
+  } else {
+     user = prompt("Please enter your name:","");
+     if (user != "" && user != null) {
+       setCookie("username", user, 30);
+     }
+  }
+}
+</script>
+</head>
+
+<body onload="checkCookie()"></body>
+
+</html>
+</xmp>
+
+<a href="lesson14example.html"><input type="button"  value="TRY IT" /></a><br><br></td>
+</tr>
+</table></center>
+
+</body>
+</html>

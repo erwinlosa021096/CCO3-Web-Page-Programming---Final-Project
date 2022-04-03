@@ -1,0 +1,94 @@
+<!DOCTYPE html> 
+
+<html>
+<head>
+<title>
+Lesson 10
+</title>
+</head>
+<body>
+<center><table border="0" cellspacing="0" width="100%"><img style="height: 100px; width: 100px; margin-left: 30px; border-radius: 50px;" src="logo1.jpg"/><img style="height: 100px; width: 100px; margin-left: 30px; border-radius: 50px;" src="logo2.jpg"/>
+<tr height="35" bgcolor="maroon" align="center">
+<td colspan="4" > <font size="5" face="cooper black" color="white">WEB PAGE PROGRAMMING<br>(USING HTML AND JAVASCRIPT)</font></td>
+
+</tr>
+
+<tr>
+<td><font size="5" face="comic sans" color="black"><b>Lesson 10: JavaScript – Error Trapping <b></font></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td><center><font size="5" face="cooper black" color="maroon"><a href="landingpage.html">BACK<a></font></center></td>
+</tr>
+<tr>
+</table>
+</center><br>
+
+<h2>Why Do You Need to Detect Errors?</h2><hr>
+<p>Errors are flaws that are developed on the course of the program development or deployment. Errors need to be handled
+properly so that the program will not crash; That is, prepare the program so it will know what to do when it faces a certain
+error.</p>
+
+<h2>Causes of Errors</h2><hr>
+<p>There are times when an error occurs during the development of the program. It could be a logical, a run-time or a syntax
+error. When we say logical errors, it means that there is something wrong with the logic or the flow of the program. It could
+be because of wrong mathematical expression or the wrong variable was used for a computation. Run-time error happens
+when an error has occurred during run time. It could be because of memory leak. Syntax error happens when the program
+has encountered a miswritten syntax of a program. It could be because of wrong capitalization or keywords, lack of quotation
+marks, etc.</p>
+
+<h2>How to Handle Errors</h2>
+<p>In JavaScript, we use the try-catch block to do error trapping.</p>
+
+<h4>Syntax of a try-catch </h4>
+<center>
+<table border="0" cellspacing="0" width="50%">
+<tr >
+<td><xmp>
+try
+{
+// put your main codes here
+}
+catch (err)
+{
+// put your solutions here if an error occurs
+}
+</xmp></td>
+</tr>
+</table></center>
+
+<p>The try block will test a block of code for errors. When an error occurs, the catch block will be executed. The throw statement
+can be used to make error trapping more accurate and precise.</p>
+
+<center>
+<table border="2" bordercolor = "maroon" cellspacing="0" width="50%">
+<tr >
+<td><xmp>
+<!DOCTYPE html>
+<html>
+<body>
+<script type="text/JavaScript">
+// try-catch-throw
+var x=9;
+try
+{
+if (x>10)
+throw "more"
+else if (x<10)
+throw "less"
+}
+catch (error)
+{
+if (error == "more")
+document.write("Number is greater than ten");
+else
+document.write("Number is less than ten");
+}
+</script>
+</body>
+</html>
+</xmp><a href="lesson10example.html"><input type="button"  value="TRY IT" /></a><br><br></td>
+</tr>
+</table></center><br><br><br>
+
+</body>
+</html>

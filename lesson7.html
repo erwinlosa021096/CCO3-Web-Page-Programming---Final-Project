@@ -1,0 +1,127 @@
+<!DOCTYPE html> 
+
+<html>
+<head>
+<title>
+Lesson 7
+</title>
+</head>
+<body>
+<center><table border="0" cellspacing="0" width="100%"><img style="height: 100px; width: 100px; margin-left: 30px; border-radius: 50px;" src="logo1.jpg"/><img style="height: 100px; width: 100px; margin-left: 30px; border-radius: 50px;" src="logo2.jpg"/>
+<tr height="35" bgcolor="maroon" align="center">
+<td colspan="4" > <font size="5" face="cooper black" color="white">WEB PAGE PROGRAMMING<br>(USING HTML AND JAVASCRIPT)</font></td>
+
+</tr>
+
+<tr>
+<td><font size="5" face="comic sans" color="black"><b>Lesson 7: JavaScript – Popup Boxes <b></font></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td><center><font size="5" face="cooper black" color="maroon"><a href="landingpage.html">BACK<a></font></center></td>
+</tr>
+<tr>
+</table>
+</center><br>
+
+<h2>What is a Popup Boxes?</h2><hr>
+<p>Popup boxes are those windows that pop-out of your screen. They could be before a page is fully loaded, effect of an event
+on a page or before leaving a page.</p>
+ <h3>JavaScript has three kinds of popup boxes and these are</h3>
+❖ Alert box<br>
+❖ Prompt box<br>
+❖ Confirm box<br>
+<p>These popup boxes can be useful in warning the user, gathering user input or simply to verify something.</p>
+ALERT BOX syntax alert(“message”);<br>
+PROMPT BOX syntax prompt(“message”, “defaultvalue”);<br>
+CONFIRM BOX syntax confirm(“message”);<br><br><br>
+
+<h2>Example of Alert Box</h2>
+<center>
+<table border="2" bordercolor = "maroon" cellspacing="0" width="50%">
+<tr >
+<td><xmp>
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/JavaScript">
+function show_alert()
+{
+alert("WARNING! WARNING!");
+}
+</script>
+</head>
+<body>
+<input type="button" onclick="show_alert()" value="show alert box" />
+</body>
+</html>
+</xmp><a href="alertbox.html"><input type="button"  value="TRY IT" /></a><br><br><br></td>
+</tr>
+</table></center>
+<br><br>
+
+
+<h2>Example of Prompt Box</h2>
+<center>
+<table border="2" bordercolor = "maroon" cellspacing="0" width="50%">
+<tr >
+<td><xmp>
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/JavaScript">
+function show_prompt()
+{
+var name=prompt("Please enter your name: ",
+"nameless");
+if (name!=null && name!="")
+{
+document.write("Welcome " + name + "! Please come in" );
+
+}
+}
+</script>
+</head>
+<body>
+<input type="button" onclick="show_prompt()"
+value="show prompt box" />
+</body>
+</html>
+</xmp><a href="promptbox.html"><input type="button"  value="TRY IT" /></a><br><br><br></td>
+</tr>
+</table></center>
+<br><br>
+
+<h2>Example of Confirm Box</h2>
+<center>
+<table border="2" bordercolor = "maroon" cellspacing="0" width="50%">
+<tr >
+<td><xmp>
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/JavaScript">
+function show_confirm()
+{
+var ans=confirm("Do you want to proceed? ");
+if (ans==true)
+{
+document.write("Access granted.");
+}
+else
+{
+document.write("Access denied.");
+}
+}
+</script>
+</head>
+<body>
+<input type="button" onclick="show_confirm()" value="Show confirm box" />
+</body>
+</html>
+</xmp><a href="confirm.html"><input type="button"  value="TRY IT" /></a><br><br><br></td>
+</tr>
+</table></center>
+<br><br>
+
+</body>
+</html>

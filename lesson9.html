@@ -1,0 +1,150 @@
+<!DOCTYPE html> 
+
+<html>
+<head>
+<title>
+Lesson 9
+</title>
+</head>
+<body>
+<center>
+<table border="0" cellspacing="0" width="100%"><img style="height: 100px; width: 100px; margin-left: 30px; border-radius: 50px;" src="logo1.jpg"/>
+<img style="height: 100px; width: 100px; margin-left: 30px; border-radius: 50px;" src="logo2.jpg"/>
+<tr height="35" bgcolor="maroon" align="center">
+<td colspan="4" > <font size="5" face="cooper black" color="white">WEB PAGE PROGRAMMING<br>(USING HTML AND JAVASCRIPT)</font></td>
+</tr>
+<tr>
+<td><font size="5" face="comic sans" color="black"><b>Lesson 9: JavaScript – Loops <b></font></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td><center><font size="5" face="cooper black" color="maroon"><a href="landingpage.html">BACK<a></font></center></td>
+</tr>
+</table>
+</center><br>
+
+<h2>What is a Loop?</h2><hr>
+<p>There are times when you want a block of code repeated over and over again until a certain condition is satisfied. This can
+be done by creating a loop. A loop is a repetitive cycle of a block of code until the condition is met.</p>
+<h3>In JavaScript, there are a variety of loops:</h3>
+❖ For loop – it loops through a block of code within a specified number of times.<br>
+❖ While loop – it loops through a block of code until the condition is satisfied.<br>
+❖ Do-while loop – it is like while loop, however, it will execute the set of codes at least once<br>
+❖ For-in loop – it loops through the elements of an array.<br>
+<p>If for instance, you want to exit from the loop after a condition has been met, you can use the break statement. This statement
+will immediately break the loop and continue the execution of codes after the said loop. The continue statement will break
+the current loop and will continue to the next value.</p>
+
+<h3>Syntax of a for loop</h3>
+<center>
+<table border="0" cellspacing="0" width="50%">
+<tr >
+<td><xmp>
+for (var=startvalue;var<=endvalue;var=var+increment)
+{
+//Place your code here
+}
+</xmp></td>
+</tr>
+</table></center>
+
+<center>
+<table border="2" bordercolor = "maroon" cellspacing="0" width="50%">
+<tr >
+<td><xmp>
+<!DOCTYPE html>
+<html>
+<body>
+<script type="text/JavaScript">
+var x;
+for (x=0;x<=6;x++)
+{
+document.write(++x);
+document.write("<br />");
+}
+document.write("Kaboom!");
+</script>
+</body>
+</html>
+</xmp><a href="forloop.html"><input type="button"  value="TRY IT" /></a><br><br></td>
+</tr>
+</table></center><br><br><br>
+
+<h3>Syntax of a while loop</h3> 
+<center>
+<table border="0" cellspacing="0" width="50%">
+<tr >
+<td><xmp>
+while (condition)
+{
+//Place your code here
+}
+</xmp></td>
+</tr>
+</table></center>
+
+<center>
+<table border="2" bordercolor = "maroon" cellspacing="0" width="50%">
+<tr >
+<td><xmp>
+<!DOCTYPE html>
+<html>
+<body>
+<script type="text/JavaScript">
+// 5 sec countdown for time bombd
+var x = 0;
+while (x < 5)
+{
+document.write(x);
+document.write(<br>); 
+x++;
+}
+document.write("Kaboom!");
+</script>
+</body>
+</html>
+</xmp><a href="whileloop.html"><input type="button"  value="TRY IT" /></a><br><br></td>
+</tr>
+</table></center><br><br><br>
+
+
+<h3>Syntax of a do-while loop </h3>
+<center>
+<table border="0" cellspacing="0" width="50%">
+<tr >
+<td><xmp>
+do
+{
+//Place your code here
+} while (condition)
+</xmp></td>
+</tr>
+</table></center>
+
+<center>
+<table border="2" bordercolor = "maroon" cellspacing="0" width="50%">
+<tr >
+<td><xmp>
+<!DOCTYPE html>
+<html>
+<body>
+<script type="text/JavaScript">
+// 5 sec countdown for time bombd
+var x = 0;
+do
+{
+document.write(x);
+document.write(<br>);
+x++;
+} while (x <= 5)
+document.write("Kaboom!");
+</script>
+</body>
+</html>
+</xmp><a href="dowhileloop.html"><input type="button"  value="TRY IT" /></a><br><br></td>
+</tr>
+</table></center><br><br><br>
+
+
+
+</body>
+</html>

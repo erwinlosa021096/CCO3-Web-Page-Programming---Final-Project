@@ -1,0 +1,113 @@
+<!DOCTYPE html> 
+
+<html>
+<head>
+<title>
+Lesson 8
+</title>
+</head>
+<body>
+<center><table border="0" cellspacing="0" width="100%"><img style="height: 100px; width: 100px; margin-left: 30px; border-radius: 50px;" src="logo1.jpg"/><img style="height: 100px; width: 100px; margin-left: 30px; border-radius: 50px;" src="logo2.jpg"/>
+<tr height="35" bgcolor="maroon" align="center">
+<td colspan="4" > <font size="5" face="cooper black" color="white">WEB PAGE PROGRAMMING<br>(USING HTML AND JAVASCRIPT)</font></td>
+
+</tr>
+
+<tr>
+<td><font size="5" face="comic sans" color="black"><b>Lesson 8: JavaScript – Functions <b></font></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td><center><font size="5" face="cooper black" color="maroon"><a href="landingpage.html">BACK<a></font></center></td>
+</tr>
+<tr>
+</table>
+</center><br>
+
+
+<h2>What is a Function?</h2>
+<p>A function is a set of statements or blocks of codes combined together for a particular use. It is usually used so that you will
+not have to retype your codes again when you need them; you can simply call it to execute it.<br>
+You may call a function anywhere within the page or even from an external JavaScript file. Functions can be defined anywhere
+in the head section or body section, however, it is ideal to put the function in the head section so that you are assured that
+it is loaded properly.</p>
+<p>Syntax of a function </p>
+
+<center>
+<table border="0" cellspacing="0" width="50%">
+<tr >
+<td><xmp>
+function
+Functionname(var1,var2,var3…,varN)
+{
+//Place your code here
+}
+</xmp></td>
+</tr>
+</table></center>
+
+
+<p>functionname, is the name of the function. var1, var2,…, varN are parameters. These are values that are passed on to the
+function whenever it is triggered. Take note that the open and close braces are required in functions. A function without a
+parameters should include the open and close parentheses () after the name of the function and remember the function must
+be in lower case otherwise a JavaScript error will be called.</p>
+
+
+<center>
+<table border="2" bordercolor = "maroon" cellspacing="0" width="50%">
+<tr >
+<td><xmp>
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/JavaScript">
+function displaymessage()
+{
+alert("Hi There!");
+}
+</script>
+</head>
+<body>
+<form>
+<input type="button" value="Click me!" onclick="displaymessage()" />
+</form>
+</body>
+</html>
+</xmp><a href="lesson8example.html"><input type="button"  value="TRY IT" /></a><br><br><br></td>
+</tr>
+</table></center>
+<br><br>
+
+<h2>The return Statement</h2>
+<p>A function may require specifying a resulting output, for examplethat of a computation, the return statement will be used to
+give that output. Therefore, functions that give out a value must use a return statement.</p>
+
+<center>
+<table border="2" bordercolor = "maroon" cellspacing="0" width="50%">
+<tr >
+<td><xmp>
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>This example calls a function which performs a calculation, and returns the result:</p>
+
+<p id="demo"></p>
+
+<script>
+var x = myFunction(4, 3); 
+
+function myFunction(a, b) {
+  return a * b;   
+}  
+document.getElementById("demo").innerHTML = x;
+</script>
+
+</body>
+</html>
+</xmp><a href="lesson8example2.html"><input type="button"  value="TRY IT" /></a><br><br><br></td>
+</tr>
+</table></center>
+<br><br>
+
+</body>
+</html>

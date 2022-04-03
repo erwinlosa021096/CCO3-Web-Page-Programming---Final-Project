@@ -1,0 +1,628 @@
+<!DOCTYPE html> 
+
+<html>
+<head>
+<title>
+Lesson 6
+</title>
+</head>
+<body>
+<center><table border="0" cellspacing="0" width="100%"><img style="height: 100px; width: 100px; margin-left: 30px; border-radius: 50px;" src="logo1.jpg"/><img style="height: 100px; width: 100px; margin-left: 30px; border-radius: 50px;" src="logo2.jpg"/>
+<tr height="35" bgcolor="maroon" align="center">
+<td colspan="4" > <font size="5" face="cooper black" color="white">WEB PAGE PROGRAMMING<br>(USING HTML AND JAVASCRIPT)</font></td>
+
+</tr>
+
+<tr>
+<td><font size="5" face="comic sans" color="black"><b>Lesson 6: JavaScript - Operators <b></font></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td><center><font size="5" face="cooper black" color="maroon"><a href="landingpage.html">BACK<a></font></center></td>
+</tr>
+<tr>
+</table>
+</center><br>
+
+<h2>What is an Operator?</h2><hr>
+<p>Let us take a simple expression 4 + 5 is equal to 9. Here 4 and 5 are called operands and ‘+’ is called the operator. JavaScript
+supports the following types of operators.<p>
+❖ Arithmetic Operators<br>
+❖ Comparison Operators<br>
+❖ Logical (or Relational) Operators<br>
+❖ Assignment Operators<br>
+❖ Conditional (or ternary) Operators<br>
+<p>Let’s have a look at all the operators one by one.</p>
+
+<h2>Arithmetic Operators</h2><hr>
+<p>JavaScript supports the following arithmetic operators:<br>
+Assume variable A holds 10 and variable B holds 20, then:</p>
+
+<center><table border="2" bordercolor = "maroon" cellspacing="0" width="50%">
+<tr>
+<td><b>S.No.</b></td>
+<td><b>Operator and Discription</b></td>
+</tr>
+
+<tr>
+<td>1.</td>
+<td><b>+ (Addition)</b><br>Adds two operands <br> Ex: A + B will give 30</td>
+</tr>
+
+<tr>
+<td>2.</td>
+<td><b>- (Subtraction)</b><br>Subtracts the second operand from the first<br> Ex: A - B will give -10</td>
+</tr>
+
+<tr>
+<td>3.</td>
+<td><b>* (Multiplication)</b><br>Multiply both operands<br> Ex: A * B will give 200</td>
+</tr>
+
+<tr>
+<td>4.</td>
+<td><b>/ (Division)</b><br>Divide the Numerator by the Denaminator<br> Ex: A / B will give 2</td>
+</tr>
+
+<tr>
+<td>5.</td>
+<td><b>% <Modulos> </b><br>Outputs of the Remainder of an integer dividion <br> Ex: A % B will give 0</td>
+</tr>
+
+<tr>
+<td>6.</td>
+<td><b>++ (Increment) </b><br>Increases an integer value by one <br> Ex: A++ will give 11</td>
+</tr>
+
+<tr>
+<td>7.</td>
+<td><b>-- (Decrement) </b><br>Decrease an integer value by one <br> Ex: A-- will give 9</td>
+</tr>
+</table></center><br><br>
+
+<p>Note: Addition operator (+) works for Numeric as well as Strings. e.g. "a" +
+10 will give "a10".<br><br>
+Example<br>
+The following code shows how to use arithmetic operators in JavaScript.</p>
+
+<center>
+<table border="1" bordercolor = "maroon" cellspacing="0" width="50%">
+<tr >
+<td><xmp>
+<html>
+<body>
+<script type="text/javascript">
+<!--
+var a = 33;
+var b = 10;
+var c = "Test";
+var linebreak = "<br />";
+document.write("a + b = ");
+result = a + b;
+document.write(result);
+document.write(linebreak);
+document.write("a - b = ");
+result = a - b;
+document.write(result);
+document.write(linebreak);
+document.write("a / b = ");
+result = a / b;
+document.write(result);
+document.write(linebreak);
+document.write("a % b = ");
+result = a % b;
+document.write(result);
+document.write(linebreak);
+document.write("a + b + c = ");
+result = a + b + c;
+document.write(result);
+document.write(linebreak);
+a = a++;
+document.write("a++ = ");
+result = a++;
+document.write(result);
+document.write(linebreak);
+b = b--;
+document.write("b-- = ");
+result = b--;
+document.write(result);
+document.write(linebreak);
+//-->
+</script>
+<p>Set the variables to different values and then try...</p>
+</body>
+</html>
+</xmp><a href="arithmetic.html"><input type="button"  value="TRY IT" /></a><br><br></td>
+</tr>
+</table></center><br><br><br></center>
+
+
+<h3>Comparison Operators</h3><hr>
+<p>Let us take a simple expression 4 + 5 is equal to 9. Here 4 and 5 are called operands and
+‘+’ is called the operator. JavaScript supports the following</p>
+<p>JavaScript supports the following comparison operators:<br>
+Assume variable A holds 10 and variable B holds 20, then:</p>
+
+<center><table border="2" bordercolor = "maroon" cellspacing="0" width="50%">
+<tr>
+<td><b>S.No.</b></td>
+<td><b>Operator and Discription</b></td>
+</tr>
+
+<tr>
+<td>1.</td>
+<td><b>= = (Equal)</b><br>Check the valueof two operands are equal or not, if yes, then <br>the conditions become true <br> Ex: (A = = B) is not true</td>
+</tr>
+
+<tr>
+<td>2.</td>
+<td><b>!= (Not Equal)</b><br>Check the valueof two operands are equal or not, if the values <br> are not equa, then the condition becomes true<br> Ex: (A != B) is true</td>
+</tr>
+
+<tr>
+<td>3.</td>
+<td><b>> (Greater than)</b><br>Check if the value of left operands are equal or not, if the values <br>are not equal, then the conditions becomes true.<br> Ex: (A > B) is not true</td>
+</tr>
+
+<tr>
+<td>4.</td>
+<td><b>< (Less than)</b><br>Checks if the value of the left operandsis less than the value of the<br> right operand, if yes, then the condition become true.<br> Ex: (A < B) is true</td>
+</tr>
+
+<tr>
+<td>5.</td>
+<td><b>>= (Greater than or Equal to) </b><br>Checks if the value of the left operand is greater than or equal to <br> the valueof the right opeand, if yes, then the condition becomes true.<br> Ex: (A >= B) is not true</td>
+</tr>
+
+<tr>
+<td>6.</td>
+<td><b><= (Less than or Equal to) </b><br>Checks if the value  of the left operand is less than or equal to the<br> value of the right operand, if yes, then the condition becomes true. <br> Ex: (A <= B) is true</td>
+</tr>
+
+</table></center><br><br>
+
+<p>Example</p>
+<p>The following code shows how to use comparison operators in JavaScript.</p>
+
+<center>
+<table border="1" bordercolor = "maroon" cellspacing="0" width="50%">
+<tr >
+<td><xmp>
+<html>
+<body>
+<script type="text/javascript">
+<!--
+var a = 10;
+var b = 20;
+var linebreak = "<br />";
+document.write("(a == b) => ");
+result = (a == b);
+document.write(result);
+document.write(linebreak);
+document.write("(a < b) => ");
+result = (a < b);
+document.write(result);
+document.write(linebreak);
+document.write("(a > b) => ");
+result = (a > b);
+document.write(result);
+document.write(linebreak);
+document.write("(a != b) => ");
+result = (a != b);
+document.write(result);
+document.write(linebreak);
+document.write("(a >= b) => ");
+result = (a >= b);
+document.write(result);
+document.write(linebreak);
+document.write("(a <= b) => ");
+result = (a <= b);
+document.write(result);
+document.write(linebreak);
+//-->
+</script>
+<p>Set the variables to different values and different operators and
+then
+try...</p>
+</body>
+</html>
+</xmp><a href="comparison.html"><input type="button"  value="TRY IT" /></a><br><br></td>
+</tr>
+</table></center><br><br><br></center>
+
+
+<h3>Logical Operators</h3><hr>
+<p>JavaScript supports the following logical operators:</p>
+<p>Assume variable A holds 10 and variable B holds 20, then:</p>
+
+<center><table border="2" bordercolor = "maroon" cellspacing="0" width="50%">
+<tr>
+<td><b>S.No.</b></td>
+<td><b>Operator and Discription</b></td>
+</tr>
+
+<tr>
+<td>1.</td>
+<td><b>&& (Logical AND)</b><br>If both the operands are non-zero, then the condition becomes true<br> Ex: (A && B) is true</td>
+</tr>
+
+<tr>
+<td>2.</td>
+<td><b>|| (Logical OR)</b><br>If any of the two operands are non-zero, then the condition becomes true. <br> Ex: (A || B) is true</td>
+</tr>
+
+<tr>
+<td>3.</td>
+<td><b>! (Logical NOT)</b><br>Reverse the logical state of its operand. if  condition is true, then the <br>Locical NOT operator will make it false. <br> Ex: ! (A && B) is false</td>
+</tr>
+</table></center><br><br>
+
+<p>Try the following code to learn how to implement Logical Operators in
+JavaScript.</p>
+
+<center>
+<table border="1" bordercolor = "maroon" cellspacing="0" width="50%">
+<tr >
+<td><xmp>
+<html>
+<body>
+<script type="text/javascript">
+<!--
+var a = true;
+var b = false;
+var linebreak = "<br />";
+document.write("(a && b) => ");
+result = (a && b);
+document.write(result);
+document.write(linebreak);
+document.write("(a || b) => ");
+result = (a || b);
+document.write(result);
+document.write(linebreak);
+document.write("!(a && b) => ");
+result = (!(a && b));
+document.write(result);
+document.write(linebreak);
+//-->
+</script>
+<p>Set the variables to different values and different operators and
+then
+try...</p>
+</body>
+</html>
+</xmp><a href="logical.html"><input type="button"  value="TRY IT" /></a><br><br></td>
+</tr>
+</table></center><br><br><br></center>
+
+<h3>Bitwise Operators</h3><hr>
+<p>JavaScript supports the following bitwise operators:</p>
+<p>Assume variable A holds 2 and variable B holds 3, then:</p>
+
+<center><table border="2" bordercolor = "maroon" cellspacing="0" width="50%">
+<tr>
+<td><b>S.No.</b></td>
+<td><b>Operator and Discription</b></td>
+</tr>
+
+<tr>
+<td>1.</td>
+<td><b>& (Bitwise AND)</b><br>Its performs a Boolean AND operation on each bit its integer arguments. <br> Ex: (A & B) is 2</td>
+</tr>
+
+<tr>
+<td>2.</td>
+<td><b>| (Bitwise OR)</b><br>ts performs a Boolean OR operation on each bit its integer arguments. <br> Ex: (A | B) is 3</td>
+</tr>
+
+<tr>
+<td>3.</td>
+<td><b>^ (Bitwise XOR)</b><br>It performs a Boolean exclusive OR operation on each bit of its integer
+<br>arguments. Exclusive OR means that either operand one is true or operand
+<br>two is true, both not both.
+<br> Ex: (A ^ B) is 1</td>
+</tr>
+
+<tr>
+<td>4.</td>
+<td><b>~ (Bitwise Not)</b><br>It is a unary operator and operates by reserving all the bits in the operand. <br> Ex: (~B) is -4</td>
+</tr>
+
+<tr>
+<td>5.</td>
+<td><b> << (Left Shift) </b><br>It moves all the bits in its first operand to the left by the number of places<br>
+specified in the second operand. New bits are filled with zeros. Shifting a <br> 
+value left by one position is equivalent to multiplying it by 2, shifting 2 <br>
+positions is equivalent to multiplying by 4, and so on.<br> 
+Ex: (A << B) is 4</td>
+</tr>
+
+<tr>
+<td>6.</td>
+<td><b>>> (Right Shift) </b><br>Binary Right Shift Operator. The left operand's value is moved right by the<br> 
+number of bits specified by the right operand. <br> 
+Ex: (A >> B) is 1</td>
+</tr>
+
+<tr>
+<td>7.</td>
+<td><b>>>> (Right Shift with Zero) </b><br>This operator is just like the >> operator, except the bills shifted in<br> 
+on the left are always zero. <br> 
+Ex: (A >>> 1) is 1</td>
+</tr>
+
+</table></center><br><br>
+
+<p>Example</p>
+<p>Try the following code to implement Bitwise operator in JavaScript.</p>
+
+<center>
+<table border="1" bordercolor = "maroon" cellspacing="0" width="50%">
+<tr >
+<td><xmp>
+<html>
+<body>
+<script type="text/javascript">
+<!--
+var a = 2; // Bit presentation 10
+var b = 3; // Bit presentation 11
+var linebreak = "<br />";
+document.write("(a & b) => ");
+result = (a & b);
+document.write(result);
+document.write(linebreak);
+document.write("(a | b) => ");
+result = (a | b);
+document.write(result);
+document.write(linebreak);
+document.write("(a ^ b) => ");
+result = (a ^ b);
+document.write(result);
+document.write(linebreak);
+document.write("(~b) => ");
+result = (~b);
+document.write(result);
+document.write(linebreak);
+document.write("(a << b) => ");
+result = (a << b);
+document.write(result);
+document.write(linebreak);
+document.write("(a >> b) => ");
+result = (a >> b);
+document.write(result);
+document.write(linebreak);
+//-->
+</script>
+<p>Set the variables to different values and different operators and then
+try...</p>
+</body>
+</html>
+</xmp><a href="bitwise.html"><input type="button"  value="TRY IT" /></a><br><br></td>
+</tr>
+</table></center><br><br><br></center>
+
+<h3>Assignment Operators</h3><hr>
+<p>JavaScript supports the following assignment operators:</p>
+
+<center><table border="2" bordercolor = "maroon" cellspacing="0" width="50%">
+<tr>
+<td><b>S.No.</b></td>
+<td><b>Operator and Discription</b></td>
+</tr>
+
+<tr>
+<td>1.</td>
+<td><b>= (Simple Assignment)</b><br>Assigns values from the right side operand to the left side operand <br> Ex: C = A + B will assign the value of A + B into C</td>
+</tr>
+
+<tr>
+<td>2.</td>
+<td><b>+= (Add and Assignment)</b><br>Its adds the right operand to the left operand and assigns the result to the left operand. <br> Ex: C += A is equivalent to C = C + A</td>
+</tr>
+
+<tr>
+<td>3.</td>
+<td><b>-= (Subtract and Assignment)</b><br>Its subtract the right operand to the left operand and assigns the result to the left operand. <br> Ex: C -= A is equivalent to C = C - A</td>
+</tr>
+
+<tr>
+<td>4.</td>
+<td><b>*= (Multiply and Assignment)</b><br>Its multiply the right operand to the left operand and assigns the result to the left operand. <br> Ex: C *= A is equivalent to C = C * A</td>
+</tr>
+
+<tr>
+<td>5.</td>
+<td><b>/= (Divide and Assignment)</b><br>Its divide the right operand to the left operand and assigns the result to the left operand. <br> Ex: C /= A is equivalent to C = C / A</td>
+</tr>
+
+<tr>
+<td>6.</td>
+<td><b>%= (Modulus and Assignment)</b><br>It take modulus using two operands and assigns the result to the left operand <br> Ex: C %= A is equivalent to C = C % A</td>
+
+</tr>
+
+</table></center><br><br>
+
+<p>Note: Same logic applies to Bitwise operators, so they will become <<=, >>=, >>=, &=, |= and ^=.</p>
+<p>Example<br>
+Try the following code to implement assignment operator in JavaScript.</p>
+
+<center>
+<table border="1" bordercolor = "maroon" cellspacing="0" width="50%">
+<tr >
+<td><xmp>
+<html>
+<body>
+<script type="text/javascript">
+<!--
+var a = 33;
+var b = 10;
+var linebreak = "<br />";
+document.write("Value of a => (a = b) => ");
+result = (a = b);
+document.write(result);
+document.write(linebreak);
+document.write("Value of a => (a += b) => ");
+result = (a += b);
+document.write(result);
+document.write(linebreak);
+document.write("Value of a => (a -= b) => ");
+result = (a -= b);
+document.write(result);
+document.write(linebreak);
+document.write("Value of a => (a *= b) => ");
+result = (a *= b);
+document.write(result);
+document.write(linebreak);
+document.write("Value of a => (a /= b) => ");
+result = (a /= b);
+document.write(result);
+document.write(linebreak);
+document.write("Value of a => (a %= b) => ");
+result = (a %= b);
+document.write(result);
+document.write(linebreak);
+//-->
+</script>
+<p>Set the variables to different values and different operators and then
+try...</p>
+</body>
+</html>
+</xmp><a href="assignment.html"><input type="button"  value="TRY IT" /></a><br><br></td>
+</tr>
+</table></center><br><br><br></center>
+
+<h3>Miscellaneous Operators</h3><hr>
+<p>We will discuss two operators here that are quite useful in JavaScript: the conditional
+operator (? :) and the typeof operator.</p>
+
+<h3>Conditional Operator (? :)</h3><hr>
+<p>The conditional operator first evaluates an expression for a true or false value and then
+executes one of the two given statements depending upon the result of the evaluation.</p>
+
+<center><table border="2" bordercolor = "maroon" cellspacing="0" width="50%">
+<tr>
+<td><b>S.No.</b></td>
+<td><b>Operator and Discription</b></td>
+</tr>
+
+<tr>
+<td>1.</td>
+<td><b>? : (Conditional)</b><br>If Condition is true? Then X : Otherwise value Y <br></td>
+</tr>
+</table></center><br><br>
+
+<p>Example<br>
+Try the following code to understand how the Conditional Operator works in JavaScript.</p>
+
+<center>
+<table border="1" bordercolor = "maroon" cellspacing="0" width="50%">
+<tr >
+<td><xmp>
+<html>
+<body>
+<script type="text/javascript">
+<!--
+var a = 10;
+var b = 20;
+var linebreak = "<br />";
+document.write ("((a > b) ? 100 : 200) => ");
+result = (a > b) ? 100 : 200;
+document.write(result);
+document.write(linebreak);
+document.write ("((a < b) ? 100 : 200) => ");
+result = (a < b) ? 100 : 200;
+document.write(result);
+document.write(linebreak);
+//-->
+</script>
+<p>Set the variables to different values and different operators and then
+try...</p>
+</body>
+</html>
+</xmp><a href="conditional.html"><input type="button"  value="TRY IT" /></a><br><br></td>
+</tr>
+</table></center><br><br><br></center>
+
+<h3>typeof Operator</h3><hr>
+<p>The typeof operator is a unary operator that is placed before its single operand, which
+can be of any type. Its value is a string indicating the data type of the operand.</p>
+<p>The typeof operator evaluates to "number", "string", or "boolean" if its operand is a
+number, string, or boolean value and returns true or false based on the evaluation.</p>
+<p>Here is a list of the return values for the typeof Operator.</p>
+
+<center><table border="2" bordercolor = "maroon" cellspacing="0" width="50%">
+<tr>
+<td><b>Type</b></td>
+<td><b>String Returned by typeof</b></td>
+</tr>
+
+<tr>
+<td>Number</td>
+<td>"number"</td>
+</tr>
+
+<tr>
+<td>String</td>
+<td>"string"</td>
+</tr>
+
+<tr>
+<td>Boolean</td>
+<td>"boolean"</td>
+</tr>
+
+<tr>
+<td>Object</td>
+<td>"object"</td>
+</tr>
+
+<tr>
+<td>Function</td>
+<td>"function"</td>
+</tr>
+
+<tr>
+<td>Undefined</td>
+<td>"undefined"</td>
+</tr>
+
+<tr>
+<td>Null</td>
+<td>"null"</td>
+</tr>
+</table>
+</center>
+
+<p>Example</p>
+<p>The following code shows how to implement typeof operator.</p>
+
+<center>
+<table border="1" bordercolor = "maroon" cellspacing="0" width="50%">
+<tr >
+<td><xmp>
+<html>
+<body>
+<script type="text/javascript">
+<!--
+var a = 10;
+var b = "String";
+var linebreak = "<br />";
+result = (typeof b == "string" ? "B is String" : "B is Numeric");
+document.write("Result => ");
+document.write(result);
+document.write(linebreak);
+result = (typeof a == "string" ? "A is String" : "A is Numeric");
+document.write("Result => ");
+document.write(result);
+document.write(linebreak);
+//-->
+</script>
+<p>Set the variables to different values and different operators and then
+try...</p>
+</body>
+</html>
+</xmp><a href="typeofoperator.html"><input type="button"  value="TRY IT" /></a><br><br></td>
+</tr>
+</table></center><br><br><br>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+
+<html>
+<head>
+<title>
+Lesson 13
+</title>
+</head>
+<body>
+<center><table border="0" cellspacing="0" width="100%"><img style="height: 100px; width: 100px; margin-left: 30px; border-radius: 50px;" src="logo1.jpg"/><img style="height: 100px; width: 100px; margin-left: 30px; border-radius: 50px;" src="logo2.jpg"/>
+<tr height="35" bgcolor="maroon" align="center">
+<td colspan="4" > <font size="5" face="cooper black" color="white">WEB PAGE PROGRAMMING<br>(USING HTML AND JAVASCRIPT)</font></td>
+
+</tr>
+
+<tr>
+<td><font size="5" face="comic sans" color="black"><b>Lesson 13: JavaScript – Browser Detection  <b></font></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td><center><font size="5" face="cooper black" color="maroon"><a href="landingpage.html">BACK<a></font></center></td>
+</tr>
+<tr>
+</table>
+</center><br>
+<h2>What is Browser Detection?</h2><hr>
+<p>There are times that we have to know what kind of web browser the user has so that we can properly handle, or atleast, know
+how well suited our web page is. The best way to do this is use a mechanism that will enable the detection of web browser
+settings. This could be done by using the navigator object.</p>
+<p>The navigator object contains information about the visitor’s web browser name, version and others.
+There are two properties for the navigator object:</p>
+<h4>❖ appName - holds the name of the browser<br>
+❖ appVersion – holds the version of the browser among the other things</h4>
+
+<center>
+<table border="2" bordercolor = "maroon" cellspacing="0" width="50%">
+<tr >
+<td><xmp>
+<!DOCTYPE html>
+<html>
+<body>
+<script type="text/JavaScript">
+var x = navigator;
+document.write("CodeName=" + x.appCodeName + "<br />");
+document.write("MinorVersion=" + x.appMinorVersion + "<br/>");
+</script>
+</body>
+</html>
+</xmp><a href="lesson13example.html"><input type="button"  value="TRY IT" /></a><br><br></td>
+</tr>
+</table></center>
+
+</body>
+</html>
