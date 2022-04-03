@@ -1,0 +1,187 @@
+<!DOCTYPE html> 
+
+<html>
+<head>
+<title>
+Lesson 4
+</title>
+</head>
+<body>
+<center><table border="0" cellspacing="0" width="100%"><img style="height: 100px; width: 100px; margin-left: 30px; border-radius: 50px;" src="logo1.jpg"/><img style="height: 100px; width: 100px; margin-left: 30px; border-radius: 50px;" src="logo2.jpg"/>
+<tr height="35" bgcolor="maroon" align="center">
+<td colspan="4" > <font size="5" face="cooper black" color="white">WEB PAGE PROGRAMMING<br>(USING HTML AND JAVASCRIPT)</font></td>
+
+</tr>
+
+<tr>
+<td><font size="5" face="comic sans" color="black"><b>Lesson 4: JavaScript - Placement <b></font></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td><center><font size="5" face="cooper black" color="maroon"><a href="landingpage.html">BACK<a></font></center></td>
+</tr>
+<tr>
+</table>
+</center>
+
+<p>There is a flexibility given to include JavaScript code anywhere in an HTML document. However the most preferred ways to
+include JavaScript in an HTML file are as follows:</p><font size="4" color="black">
+<xmp>Script in <head>...</head> section.
+Script in <body>...</body> section.
+Script in <body>...</body> and <head>...</head> sections.
+Script in an external file and then include in <head>...</head> section.
+In the following section, we will see how we can place JavaScript in an HTML file in different ways.</xmp></font><br>
+
+
+<font size="5" color="black">
+<xmp>JavaScript in <head>...</head> Section</xmp></font><hr>
+-If you want to have a script run on some event, such as when a user clicks somewhere, then you will place that
+script in the head as follows.<br>
+-In the "Javascript" section, select "Do not allow any site to run JavaScript" or "Allow all sites to run JavaScript
+(recommended)".<br><br><br>
+
+<center>
+<table border="2" bordercolor = "maroon" cellspacing="0" width="50%">
+<tr >
+<td><xmp>
+<html>
+<head>
+<script type="text/javascript">
+<!--
+function sayHello() {
+alert("Hello World")
+}
+//-->
+</script>
+</head>
+<body>
+Click here for the result
+<input type="button" onclick="sayHello()" value="Say Hello" />
+</body>
+</html>
+</xmp>
+</xmp><a href="lesson4example.html"><input type="button"  value="TRY IT" /></a><br><br><br></td></td>
+</tr>
+</table></center>
+<br><br>
+<p>This code will produce the following results:</p>
+
+<center>
+<table border="1" bordercolor = "maroon" cellspacing="0" width="75%">
+<tr >
+<td><img src="lesson4example.png"></td>
+</tr>
+</table><br><br></center>
+
+<font size="5" color="black">
+<xmp>JavaScript in <body>...</body> Section </xmp></font><hr>
+<p>If you need a script to run as the page loads so that the script generates content in the page, then the script goes in the 
+<-body-> portion of the document. In this case, you would not have any function defined using JavaScript. Take a look at the
+following code.</p><br>
+
+<center>
+<table border="2" bordercolor = "maroon" cellspacing="0" width="50%">
+<tr >
+<td><xmp>
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+<!--
+document.write("Hello World")
+//-->
+</script>
+<p>This is web page body </p>
+</body>
+</html>
+</xmp><a href="lesson4example2.html"><input type="button"  value="TRY IT" /></a><br><br><br></td></td>
+</tr>
+</table></center>
+<br><br>
+
+<center>
+<table border="1" bordercolor = "maroon" cellspacing="0" width="75%">
+<tr >
+<td><img src="lesson4example2.png"></td>
+</tr>
+</table><br><br></center>
+
+
+<font size="5" color="black">
+<xmp>
+JavaScript in <body> and <head> Sections</xmp></font><hr>
+<p>You can put your JavaScript code in <-head-> and <-body-> section altogether as follows.at the following code.</p>
+
+<center>
+<table border="2" bordercolor = "maroon" cellspacing="0" width="50%">
+<tr >
+<td><xmp>
+<html>
+<head>
+<script type="text/javascript">
+<!--
+function sayHello() {
+alert("Hello World")
+}
+//-->
+</script>
+</head>
+<body>
+<script type="text/javascript">
+<!--
+document.write("Hello World")
+//-->
+</script>
+<input type="button" onclick="sayHello()" value="Say Hello" />
+</body>
+</html>
+</xmp><a href="lesson4example3.html"><input type="button"  value="TRY IT" /></a><br><br><br></td></td>
+</tr>
+</table></center>
+<br><br><br>
+
+<h2>JavaScript in External File</h2><hr>
+<p>As you begin to work more extensively with JavaScript, you will be likely to find that there are cases where you are reusing
+identical JavaScript code on multiple pages of a site.
+You are not restricted to be maintaining identical code in multiple HTML files.</p>
+
+<p>The script tag provides a mechanism to allow you to store JavaScript in an
+external file and then include it into your HTML files.
+Here is an example to show how you can include an external JavaScript file in
+your HTML code using script tag and its src attribute.</p><br><br>
+
+<center>
+<table border="0" cellspacing="0" width="50%">
+<tr >
+<td><font size="5" color="black"><xmp>
+<html>
+<head>
+<script type="text/javascript" src="filename.js" ></script>
+</head>
+<body>
+.......
+</body>
+</html>
+</xmp></xmp></td></td>
+</tr>
+</table></center>
+<br>
+
+<p>To use JavaScript from an external file source, you need to write all your JavaScript source code in a simple text file with the
+extension ".js" and then include that file as shown above.
+For example, you can keep the following content in filename.js file and then you can use sayHello function in your HTML file
+after including the filename.js file.</p><br>
+<center>
+<table border="0" cellspacing="0" width="50%">
+<tr >
+<td><font size="5" color="black"><xmp>
+function sayHello() {
+alert("Hello World")
+}
+</xmp></td>
+</tr>
+</table></center>
+<br>
+
+</body>
+</html>

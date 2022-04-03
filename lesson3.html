@@ -1,0 +1,105 @@
+<!DOCTYPE html> 
+
+<html>
+<head>
+<title>
+Lesson 3
+</title>
+</head>
+<body>
+<center><table border="0" cellspacing="0" width="100%"><img style="height: 100px; width: 100px; margin-left: 30px; border-radius: 50px;" src="logo1.jpg"/>
+<img style="height: 100px; width: 100px; margin-left: 30px; border-radius: 50px;" src="logo2.jpg"/>
+<tr height="35" bgcolor="maroon" align="center">
+<td colspan="4" > <font size="5" face="cooper black" color="white">WEB PAGE PROGRAMMING<br>(USING HTML AND JAVASCRIPT)</font></td>
+
+</tr>
+
+<tr>
+<td><font size="5" face="comic sans" color="black"><b>Lesson 3: JavaScript - Enabling <b></font></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td><center><font size="5" face="cooper black" color="maroon"><a href="landingpage.html">BACK<a></font></center></td>
+</tr>
+<tr>
+</table>
+</center>
+<p>All the modern browsers come with built-in support for JavaScript. Frequently, you may need to enable or disable this support
+manually. This chapter explains the procedure of enabling and disabling JavaScript support in your browsers: Internet
+Explorer, Firefox, chrome, and Opera.<p><br>
+
+
+<h2>JavaScript in Internet Explorer</h2><hr>
+<h3>Here are the steps to turn on or turn off JavaScript in Internet Explorer:</h3>
+<ul type="square">
+<li>Follow Tools -> Internet Options from the menu.
+<li>Select Security tab from the dialog box.
+<li>Click the Custom Level button.
+<li>Scroll down till you find the Scripting option.
+<li>Select Enable radio button under Active scripting.
+<li>Finally click OK and come out.</ul>
+<p>To disable JavaScript support in your Internet Explorer, you need to select Disable radio button under Active scripting.</p><br>
+
+
+<h2>JavaScript in Firefox</h2><hr>
+<h3>Here are the steps to turn on or turn off JavaScript in Firefox:</h3>
+<ul type="square">
+<li>Open a new tab -> type about: config in the address bar.
+<li>Then you will find the warning dialog. Select I’ll be careful, I promise!
+<li>Then you will find the list of configure options in the browser.
+<li>In the search bar, type JavaScript enabled.
+<li>There you will find the option to enable or disable JavaScript by right-clicking on the value of that option -> select toggle.</ul>
+<p>If JavaScript enabled is true; it converts to false upon clicking toggle. If JavaScript is disabled; it gets enabled upon clicking toggle. </p><br>
+
+
+<h2>JavaScript in Chrome</h2><hr>
+<h3>Here are the steps to turn on or turn off JavaScript in Chrome:</h3>
+<ul type="square">
+<li>Click the Chrome menu at the top right hand corner of your browser.
+<li>Select Settings.
+<li>Click Show advanced settings at the end of the page.
+<li>Under the Privacy section, click the Content settings button.
+<li>In the "JavaScript" section, select "Do not allow any site to run JavaScript" or "Allow all sites to run JavaScript (recommended)". <br><br>
+
+
+<h2>JavaScript in Opera</h2><hr>
+<h3>Here are the steps to turn on or turn off JavaScript in Opera:</h3>
+<ul type="square">
+<li>Follow Tools-> Preferences from the menu.
+<li>Select Advanced option from the dialog box.
+<li>Select Content from the listed items.
+<li>Select Enable JavaScript checkbox.
+<li>Finally click OK and come out.
+<p>To disable JavaScript support in Opera, you should not select the Enable JavaScript checkbox </p><br>
+
+<h2>Warning for Non-JavaScript Browser</h2><hr>
+<p>If you have to do something important using JavaScript, then you can display a warning message to the user using tags.
+You can add a noscript block immediately after the script block as follows: </p>
+
+<center>
+<table border="2" bordercolor = "maroon" cellspacing="0" width="50%">
+<tr >
+<td><xmp>
+<html>
+<body>
+<script language="javascript" type="text/javascript">
+<!--
+document.write ("Hello World!")
+//-->
+</script>
+<noscript>
+Sorry...JavaScript is needed to go ahead.
+</noscript>
+</body>
+</html>
+</xmp><a href="lesson3example.html"><input type="button"  value="TRY IT" /></a><br><br><br></td>
+</tr>
+
+</table></center>
+<br><br>
+
+<p>Now, if the user's browser does not support JavaScript or JavaScript is not enabled, then the message from </noscript> will
+be displayed on the screen.</p>
+
+
+</body>
+</html>
